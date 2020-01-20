@@ -3,6 +3,9 @@ import sys
 
 # Get user supplied values
 imagePath = sys.argv[1]
+# The Ghost in the Shell image
+gitsPath = "laughing_man_transparent.png"
+# Our cascade
 cascPath = "haarcascade_frontalface_default.xml"
 
 # Create the haar cascade

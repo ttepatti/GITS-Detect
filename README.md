@@ -2,6 +2,11 @@
 
 Ghost In The Shell Facial Detection
 
+![Test Image](test images/abba.png)
+Test Image
+![Result Image](result images/abba_result.jpg)
+Result Image
+
 ## Overview
 
 The point of this project was to be able to take a live video feed and draw the Ghost in the Shell "Laughing Man" image over every detected face. It was done as a fun way to get more familiar with both Python and OpenCV.

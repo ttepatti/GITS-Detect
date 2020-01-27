@@ -2,9 +2,12 @@
 
 Ghost In The Shell Facial Detection
 
-![Test Image](test images/abba.png)
+![Test Image](https://github.com/ttepatti/GITS-Detect/raw/master/test_images/abba.png)
+
 Test Image
-![Result Image](result images/abba_result.jpg)
+
+![Result Image](https://github.com/ttepatti/GITS-Detect/raw/master/result_images/abba_result.jpg)
+
 Result Image
 
 ## Overview

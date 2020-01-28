@@ -53,7 +53,18 @@ print(faces)
 
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
-    #cv2.rectangle(faceImage, (x, y), (x+w, y+h), (0, 255, 0), 2)
+    # Make x, y around 30% different from where they were (to deal with the bigger gits image)
+    x = int(x - (w * 0.3))
+    y = int(y - (h * 0.3))
+
+    # Just in case we go out of bounds!
+    if x < 0: x = 0
+    if y < 0: y = 0
+
+
+    # Grow the gits image by 50%
+    w = int(w + (w * 0.5))
+    h = int(h + (h * 0.5))
 
     # Get region of interest around faces
     # the y+h is because we're getting the y coord of the lower right corner

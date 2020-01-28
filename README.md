@@ -25,8 +25,7 @@ Currently, it can detect faces in still images (provided via command line argume
 The current To-Do list is as follows:
 
 * Implement reading frames from a webcam instead of a single still image
-* Increase GITS image size by 20-30% to cover the individual's entire head
-* Possibly chance cascade to detect heads, rather than faces? It may be more accurate that way, and could cover someone who is turned around.
+* Possibly change the cascade to detect heads, rather than faces? It may be more accurate that way, and could cover someone who is turned around.
 
 ## Image Comparison
 

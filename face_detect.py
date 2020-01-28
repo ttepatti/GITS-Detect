@@ -89,5 +89,5 @@ for (x, y, w, h) in faces:
     # place the joined final image in dst
     faceImage[y:y+h, x:x+w] = dst
 
-cv2.imshow("Faces found", faceImage)
+cv2.imshow("What I thought I'd do was, I'd pretend I was one of those deaf-mutes", faceImage)
 cv2.waitKey(0)

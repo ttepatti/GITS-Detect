@@ -51,7 +51,6 @@ print(faces)
 
 # --------------- Loop through faces ---------------
 
-# Draw a rectangle around the faces
 for (x, y, w, h) in faces:
     # Make x, y around 30% different from where they were (to deal with the bigger gits image)
     x = int(x - (w * 0.3))
@@ -69,7 +68,6 @@ for (x, y, w, h) in faces:
     # Get region of interest around faces
     # the y+h is because we're getting the y coord of the lower right corner
     # same with x+w
-    roi_gray = gray[y:y+h, x:x+w]
     roi_color = faceImage[y:y+h, x:x+w]
 
     # Resize the RGB image, mask, and inverted mask to the size of the face
@@ -80,7 +78,7 @@ for (x, y, w, h) in faces:
     # roi_bg will contain the original image only where there is no face
     roi_bg = cv2.bitwise_and(roi_color, roi_color, mask = mask_inv)
 
-    # roi_fg contains the image of the gits symbol without the background (afaik?)
+    # roi_fg contains the image of the gits symbol without the background
     roi_fg = cv2.bitwise_and(gits, gits, mask = mask)
 
     # join the roi_bg and roi_fg

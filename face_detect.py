@@ -75,7 +75,7 @@ for (x, y, w, h) in faces:
     mask = cv2.resize(gitsAlpha, (w, h), interpolation = cv2.INTER_AREA)
     mask_inv = cv2.resize(gitsAlpha_inv, (w, h), interpolation = cv2.INTER_AREA)
 
-    # roi_bg will contain the original image only where there is no face
+    # roi_bg will contain the cropped face region of interest with the shape of our mask_inv "cut out" of it
     roi_bg = cv2.bitwise_and(roi_color, roi_color, mask = mask_inv)
 
     # roi_fg contains the image of the gits symbol without the background
@@ -84,7 +84,7 @@ for (x, y, w, h) in faces:
     # join the roi_bg and roi_fg
     dst = cv2.add(roi_bg, roi_fg)
 
-    # place the joined final image in dst
+    # add our dst image in place of the old face within faceImage
     faceImage[y:y+h, x:x+w] = dst
 
 cv2.imshow("What I thought I'd do was, I'd pretend I was one of those deaf-mutes", faceImage)

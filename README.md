@@ -6,17 +6,9 @@ Ghost In The Shell Facial Detection
 
 The point of this project was to be able to take a live video feed and draw the Ghost in the Shell "Laughing Man" image over every detected face. It was done as a fun way to get more familiar with both Python and OpenCV.
 
-For context on the Ghost in the Shell laughing man, I highly recommend watching the source material.
+For context on the Ghost in the Shell laughing man, I highly recommend [watching the source material](https://www.amazon.com/Ghost-Shell-Complex-Season-Blu-ray/dp/B01NBHMO5B/). Otherwise, [you can see the specific scene here](https://www.youtube.com/watch?v=mrte6dseXWk), or [read a bit more information here](https://ghostintheshell.fandom.com/wiki/Laughing_Man)
 
-https://www.amazon.com/Ghost-Shell-Complex-Season-Blu-ray/dp/B01NBHMO5B/
-
-Otherwise, you can see the scene here:
-
-https://www.youtube.com/watch?v=mrte6dseXWk
-
-A bit more information:
-
-https://ghostintheshell.fandom.com/wiki/Laughing_Man
+Additionally, I wrote a blog post explaining everything this code does! You can [check it out here](https://tepatti.com/blog/006-opencv-gits/index.html).
 
 ## Current Progress
 
